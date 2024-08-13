@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - JS</title>
+  </head>
+  <body>
+    <!-- getElementById ----------------------------------------------------------------------- -->
+    <!-- <p id="message">Javascript Dom</p>
+      <p id="message">Javascript (not selected using getElementById)</p> -->
+
+    <!-- getElementsByName ----------------------------------------------------------------------- -->
+    <!-- <input type="radio" name="language" value="JS" />JS
+      <input type="radio" name="language" value="Pyhton" />Python
+     -->
+
+    <!-- getElementByTagName ----------------------------------------------------------------------- -->
+    <!-- <h1>first Heading</h1>
+     <h1>second Heading</h1>
+     <h1>third Heading</h1>
+     <h1>forth Heading</h1> -->
+
+    <!-- getElementsByClassName ---------------------------------------------------------- -->
+    <h1 class="heading">h1</h1>
+    <h1 class="heading">h1</h1>
+    <h1 class="heading">h1</h1>
+    <h1 class="heading">h1</h1>
+    <h1 class="">not selected</h1>
+  </body>
+  <script>
+    // only select first element of matching ID
+    // let msg = document.getElementById("message");
+    // console.log(msg);
+
+    // select all element by matching name
+    // let element = document.getElementsByName("language");
+    // console.log(element);
+
+    // select all element by matching tag name
+    // let elements = document.getElementsByTagName("h1");
+    // console.log(elements);
+
+    // select all elements by maching className
+    let elements= document.getElementsByClassName('heading');
+    console.log(elements);
+  </script>
+</html>
